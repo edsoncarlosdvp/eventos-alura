@@ -5,6 +5,7 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import MetaTags from '../src/components/Head'
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={dbJson.bg}>
       <QuizContainer>
+        <MetaTags></MetaTags>
         <QuizLogo />
         <Widget>
           <Widget.Header>
